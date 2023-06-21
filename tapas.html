@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="favorites.js" defer></script>
+
+
+    <title>Snackturnatives</title>
+</head>
+<!--Header with image-->
+<body style="color: white; background-color: #6E6E6E">
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-12 text-center">
+            <div id="background-image"
+                 class="p-5 text-center bg-image"
+                 style="
+      background-image: url('./images/backgroundImage.jpeg');
+      height: 40vw;
+      margin-top: 40px;">
+
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <div class="text-white">
+                            <h1 class="mb-3" style="margin-top: 10px">Welkom bij SnackTurnatives</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="margin-left: 20vw; margin-top: 20px; margin-bottom: 40px">
+    <div class="col-md-3">
+        <div class="card mx-auto" style="width: 18rem;">
+            <img id="img1" class="card-img-top" src="./images/lomo.jpg" style="margin-top: 5px">
+            <div class="card-body">
+                <h5 id="title1" class="card-title">Spaanse Lomo</h5>
+                <p class="card-text">Een mooi hoog eiwit, lage calorieën alternatief voor tapas</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">KCAL per 100 gr: 284</li>
+                <li class="list-group-item">Eiwitten per 100 gr: 42gr</li>
+                <li class="list-group-item">Zout per 100 gr: 3gr</li>
+                <li class="list-group-item"><button id="favoriteSpaanseLomo" onclick="spaanseLomoHandler()">Favoriet</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card mx-auto" style="width: 18rem;">
+            <img id="img2" class="card-img-top" src="./images/noten.jpg" style="margin-top: 5px">
+            <div class="card-body">
+                <h5 id="title2" class="card-title">Ongezouten Pinda's</h5>
+                <p class="card-text">Een lekker, snelvullend alternatief voor tapas</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">KCAL per 100 gr: 623</li>
+                <li class="list-group-item">Eiwitten per 100 gr: 27gr</li>
+                <li class="list-group-item">Zout per 100 gr: 0gr</li>
+                <li class="list-group-item"><button id="favoriteNoten" onclick="notenHandler()">Favoriet</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card mx-auto" style="width: 18rem;">
+            <img id="img3" class="card-img-top" src="./images/kaas.jpg" style="margin-top: 5px">
+            <div class="card-body">
+                <h5 id="title3" class="card-title">Jong belegen 30+ kaas</h5>
+                <p class="card-text">Een lager vet alternatief voor kaas hapjes</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">KCAL per 100 gr: 282</li>
+                <li class="list-group-item">Eiwitten per 100 gr: 30gr</li>
+                <li class="list-group-item">Zout per 100 gr: 1.9gr</li>
+                <li class="list-group-item"><button id="favoriteKaas" onclick="kaasHandler()">Favoriet</button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container" style="margin-bottom: 40px">
+    <div class="col-md-12 text-center">
+        <a href="index.html">
+            <button type="button" class="btn btn-primary">Back to home page</button>
+        </a>
+    </div>
+</div>
+<div class="container" style="margin-bottom: 40px; margin-top: 30px">
+    <div class="col-md-12 text-center">
+        <a href="favorites.html">
+            <button type="button" class="btn btn-primary">Go to favorites</button>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
